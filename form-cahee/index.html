@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="mainer">
+        <header class="head">
+            <h1 class="head__header">Contact</h1>
+            <div class="head__caption">For new projects, ideas, business or anything
+                you'd like to discuss, contact with me!</div>
+        </header>
+
+        <div class="section">
+            <form action="#" method="POST" class="section__block-form">
+                <div class="input-wrapper">
+                    <input type="text" name="name" placeholder="Your name.." id="name" required minlength="2">
+                    <div class="error">Enter your name</div>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="email" name="email" placeholder="Your email address.." id="email" required
+                        minlength="5">
+                    <div class="error">Enter valid email address</div>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="tel" name="phoneNumber" placeholder="Your phone number.." required
+                        data-mask="+00 (000) 000 0000">
+                    <div class="error">Enter valid phone number</div>
+                </div>
+
+                <div class="textarea-wrapper">
+                    <textarea name="message" placeholder="Your Message.." maxlength="160"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="submit" value="Send">
+                </div>
+
+            </form>
+            <div class="info">
+                <div class="info__title">ADDRESS</div>
+                <div class="info__description">123 City name, Street, City, Country</div>
+
+                <div class="info__title">EMAIL</div>
+                <div class="info__description">cahee@domain.com</div>
+
+                <div class="info__title">PHONE</div>
+                <div class="info__description">+012 345 6789</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__copyright">&#169; 2015 Company. All right reserved.</div>
+        <div class="footer__logo">Cahee</div>
+        <div class="footer__author">Made with <span class="footer__author--highlight">love</span> by Auskteez</div>
+    </footer>
+
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+</body>
+
+</html>

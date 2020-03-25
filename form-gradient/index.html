@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="mainer">
+        <div class="block-form">
+            <div class="block-form__tabs">
+                <ul class="tabs">
+                    <li class="tabs__item">
+                        <a href="#" class="tabs__item--content tabs__item--content--highlight">Sign in</a>
+                    </li>
+                    <li class="tabs__item">
+                        <a href="#" class="tabs__item--content">Join us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form action="#" method="GET" class="block-form__input">
+                <div class="input">
+                    <label class="input__label" for="Username">Username</label>
+                    <input class="input__field-input" type="text" name="username" id="username" required minlength="4">
+                    <div class="input__error">Enter username</div>
+                </div>
+
+                <div class="input">
+                    <label class="input__label" for="Username">Password</label>
+                    <input class="input__field-input" type="password" name="password" id="password" required
+                        minlength="4">
+                    <div class="input__error">Enter correct password</div>
+                </div>
+
+                <div class="input input--checkbox">
+                    <input type="checkbox" id="keep" checked>
+                    <label class="input__label input__label--checkbox" for="keep">
+                        <span class="input__checkbox">&#10004;</span>
+                        Keep me signed in
+                    </label>
+                </div>
+
+                <div class="input">
+                    <input class="input__button" type="submit" value="Sign in">
+                </div>
+            </form>
+
+            <div class="block-form__help">
+                <ul class="help">
+                    <li class="help__item">
+                        <a href="#" class="help__item--content">Forgot password</a>
+                    </li>
+                    <li class="help__item">
+                        <a href="#" class="help__item--content help__item--content--float">Create an account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
